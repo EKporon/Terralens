@@ -61,4 +61,16 @@ TerraLens aims to provide accessible data-driven insights to help users make bet
 
 ---
 
-# Project Architecture
+# Future Roadmap
+
+Flood risk analysis
+Soil analysis
+Satellite imagery
+Land investment scoring
+Agricultural recommendations
+AI-powered land reports
+
+---
+
+# Author
+Kporon Ejiroghene Solomon
