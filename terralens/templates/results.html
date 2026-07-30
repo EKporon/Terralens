@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+
+TerraLens | Analysis
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+<section class="dashboard">
+
+
+<div class="map-container">
+
+<h2>
+    Location Map
+</h2>
+
+
+<div id="map">
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="information-panel">
+
+
+
+<div class="card">
+
+<h3>
+📍 Location
+</h3>
+
+<p id="location">
+
+Loading...
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+🌤 Weather
+</h3>
+
+<p id="weather">
+
+Loading...
+
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+⛰ Elevation
+</h3>
+
+
+<p id="elevation">
+
+Loading...
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card score">
+
+
+<h3>
+
+Land Intelligence Score
+
+</h3>
+
+
+<h1>
+
+-- / 100
+
+</h1>
+
+
+<p>
+
+Generating assessment...
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+{% endblock %}
