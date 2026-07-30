@@ -1,1 +1,66 @@
+/* ==========================
+   Responsive Design
+========================== */
 
+
+
+@media(max-width:900px){
+
+
+.navbar {
+
+    padding:0 5%;
+
+}
+
+
+
+.hero h1 {
+
+    font-size:2.5rem;
+
+}
+
+
+
+#search-form {
+
+    flex-direction:column;
+
+}
+
+
+
+#address {
+
+    width:100%;
+
+}
+
+
+
+.coordinates {
+
+    flex-direction:column;
+
+}
+
+
+
+.dashboard {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+#map {
+
+    height:400px;
+
+}
+
+
+
+}
