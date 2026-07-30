@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+
+TerraLens | Home
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<section class="hero">
+
+
+<h1>
+    Know the Land
+    <br>
+    Before You Buy It.
+</h1>
+
+
+<p>
+
+Evaluate terrain, climate,
+and environmental conditions
+before investing in land.
+
+</p>
+
+
+
+<div class="search-container">
+
+
+<form id="search-form">
+
+
+<input 
+type="text"
+id="address"
+placeholder="Enter land address..."
+>
+
+
+<button type="submit">
+
+Analyze Land
+
+</button>
+
+
+</form>
+
+
+
+<p class="divider">
+
+OR
+
+</p>
+
+
+
+<div class="coordinates">
+
+
+<input 
+type="number"
+placeholder="Latitude"
+id="latitude"
+>
+
+
+<input 
+type="number"
+placeholder="Longitude"
+id="longitude"
+>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+{% endblock %}
