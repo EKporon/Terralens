@@ -1,1 +1,206 @@
+/* ==========================
+   Layout
+========================== */
 
+
+
+.hero {
+
+    min-height: calc(100vh - 120px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size: 4rem;
+
+    line-height: 1.15;
+
+    color: #1b4332;
+
+}
+
+
+
+.hero p {
+
+    margin-top: 20px;
+
+    max-width: 600px;
+
+    font-size: 1.2rem;
+
+    color: #546e7a;
+
+}
+
+
+
+.search-container {
+
+    margin-top: 40px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,0.08);
+
+}
+
+
+
+#search-form {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+
+#address {
+
+    width: 400px;
+
+    padding: 15px 20px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    font-size: 1rem;
+
+}
+
+
+
+button {
+
+    background: #2E7D32;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+
+
+button:hover {
+
+    background:#1b5e20;
+
+}
+
+
+
+.divider {
+
+    margin:25px 0;
+
+    font-weight:bold;
+
+}
+
+
+
+.coordinates {
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.coordinates input {
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+}
+
+
+
+
+
+/* Dashboard */
+
+
+.dashboard {
+
+    display:grid;
+
+    grid-template-columns:
+
+    2fr 1fr;
+
+    gap:30px;
+
+    padding:40px 8%;
+
+}
+
+
+
+.map-container {
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+}
+
+
+
+#map {
+
+    height:600px;
+
+    border-radius:15px;
+
+    background:#eceff1;
+
+}
+
+
+
+.information-panel {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
