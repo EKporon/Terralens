@@ -60,6 +60,25 @@ TerraLens aims to provide accessible data-driven insights to help users make bet
 - Azure Virtual Machines
 
 ---
+## Deployment
+
+### Requirements
+- Ubuntu 20.04+
+- Python 3
+- Git
+- Nginx
+
+### Deploy
+
+git clone https://github.com/EKporon/Terralens.git
+
+cd Terralens/terralens
+
+chmod +x deployment/install.sh
+chmod +x deployment/deploy.sh
+
+sudo ./deployment/install.sh
+./deployment/deploy.sh
 
 # Future Roadmap
 

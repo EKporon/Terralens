@@ -1,0 +1,26 @@
+[Unit]
+Description=TerraLens Flask Application
+After=network.target
+
+
+[Service]
+
+User=ubuntu
+Group=ubuntu
+
+WorkingDirectory=/home/ubuntu/Terralens/terralens
+
+Environment="PATH=/home/ubuntu/Terralens/terralens/venv/bin"
+
+ExecStart=/home/ubuntu/Terralens/terralens/venv/bin/gunicorn \
+          --workers 3 \
+          --bind 127.0.0.1:8000 \
+          "app:create_app()"
+
+
+Restart=always
+
+
+[Install]
+
+WantedBy=multi-user.target
