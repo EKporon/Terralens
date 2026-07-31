@@ -3,6 +3,13 @@
 
 TerraLens is a Flask-based web application designed to help users evaluate land conditions before making investment decisions. This project demonstrates the deployment of a scalable web application architecture using multiple servers, Gunicorn, Nginx, and automated deployment scripts.
 
+Demo Video
+
+The deployment demonstration video can be found here:
+
+YouTube Link:
+https://youtu.be/3P7AUziaze4
+
 ## Deployment Architecture
 
 The application was deployed using a three-server architecture:
@@ -287,8 +294,7 @@ Demo Video
 The deployment demonstration video can be found here:
 
 YouTube Link:
-
-[INSERT YOUTUBE LINK HERE]
+https://youtu.be/3P7AUziaze4
 
 Technologies Used:
 Python
