@@ -1,63 +1,137 @@
 /*
 =================================
-TerraLens Search Handler
+TerraLens Search Controller
 =================================
 */
 
 
-const searchForm = document.getElementById(
+const form = document.getElementById(
     "search-form"
 );
 
 
 
-if(searchForm){
+if(form){
 
 
-    searchForm.addEventListener(
-        "submit",
-        async function(event){
+form.addEventListener(
+"submit",
+async function(event){
 
 
-            event.preventDefault();
-
-
-
-            const address =
-            document.getElementById(
-                "address"
-            ).value;
+event.preventDefault();
 
 
 
-            if(!address){
-
-                alert(
-                    "Please enter a location."
-                );
-
-                return;
-
-            }
+const address =
+document.getElementById(
+"address"
+).value;
 
 
 
-            console.log(
-                "Searching:",
-                address
-            );
+if(!address){
 
-
-
-            /*
-            Later this connects to Flask:
-
-            /search?address=value
-
-            */
-
-
-        }
+    alert(
+    "Please enter an address"
     );
+
+    return;
+
+}
+
+
+
+
+try{
+
+
+const response =
+await fetch(
+"/api/analyze",
+{
+
+method:"POST",
+
+headers:
+{
+
+"Content-Type":
+"application/json"
+
+},
+
+body:
+JSON.stringify(
+{
+address: address
+}
+)
+
+}
+
+);
+
+
+
+
+const data =
+await response.json();
+
+
+
+if(data.error){
+
+    alert(data.error);
+
+    return;
+
+}
+
+
+
+
+// Save result temporarily
+
+localStorage.setItem(
+
+"terralens_result",
+
+JSON.stringify(data)
+
+);
+
+
+
+
+// Go to dashboard
+
+window.location.href =
+"/results";
+
+
+
+
+
+}
+
+catch(error){
+
+
+console.error(
+error
+);
+
+
+alert(
+"Unable to analyze location."
+);
+
+
+}
+
+
+
+});
 
 }
